@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tammy Lustre Web Dev Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <a href="#header">
+                <img src="assets/logo.png" alt="logo" />
+            </a>
+        </div>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            &#9776;
+        </div>
+        <div class="nav-links" id="nav-links">
+            <a href="#about">ABOUT</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#contact">CONTACT</a>
+
+        </div>
+    </nav>      
+
+    <section id="header">
+        <div class="container">
+            <div id="hello-container">
+                <h1 id="greeting">hello!</h1> 
+                <h2>i'm <span id="my-name">tammy lustre</span></h2>
+                <h3>and i'm <span id="intro">a full-stack web developer</span></h3>
+
+
+            </div>
+        </div>
+        <a href="#about">
+            <button class="next-button">get to know me ↓</button>
+          </a>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">about</h2>
+        <div class="container">
+          <div id="profile-container">
+            <div id="profile">
+                <img src ="assets/tammy.png" alt="photo of tammy lustre" id="my-image"/>
+                <div id="description">
+                    <h3>Hey there!</h3>
+                    <p>I'm Mikaella Lustre but I'm best known as Tammy. I'm a fullstack javascript developer. MERN is my stack of choice (MongoDB, Express, React, and Node.js) for developing web applications.</p>
+                    <p>With a background in arts and humanities, I developed strong communication skills and a keen understanding of cultural contexts. My experience in customer support has honed my ability to solve problems efficiently and with empathy. These skills, combined with my passion for design and technology, have led me to pursue web development, where I aim to create innovative and user-friendly solutions through programming and creative thinking.</p>
+                    <div id="contact-links">
+                    <a href="assets/resume.pdf" target="_blank" class="button">
+                        <button id="resume">get my resume</button>
+                    </a>
+                    <a href="mailto:mikaella.patria@gmail.com" target="_blank">
+                        <button>email me</button>
+                    </a>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <a href="#skills">
+          <button class="next-button">↓</button>
+        </a>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">skills</h2>
+        <div class="container" id="technologies">
+            <img src="assets/html-5.png" alt="HTML logo" class="skills-logos" />
+            <img src="assets/css-3.png" alt="CSS logo" class="skills-logos" />
+            <img src="assets/js.png" alt="Javascript logo" class="skills-logos" />
+            <img src="assets/react.png" alt="ReactJS logo" class="skills-logos" />
+            <img src="assets/node.png" alt="Node.js logo" class="skills-logos" />
+            <img src="assets/express-js.png" alt="Express.js logo" class="skills-logos" />
+            <img src="assets/mongodb.png" alt="MongoDB logo" class="skills-logos" />
+            <img src="assets/tailwind.png" alt="TailwindCSS logo" class="skills-logos" />
+            <img src="assets/git.png" alt="Git logo" class="skills-logos" />
+        </div>
+        <a href="#projects">
+          <button class="next-button">↓</button>
+        </a>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">projects</h2>
+        <div class="container" id="project-cards-container">
+            <div class="project-card">
+                <div class="image-container">
+                    <img src="assets/1.png" alt="portfolio cover image" class="cover-img"/>
+                    <img src="assets/1s.png" alt="portfolio screenshot" class="project-img"/>
+                </div>
+                
+                <h3>WEB DEV PORTFOLIO</h3>
+                <p>A personal portfolio website showcasing my work, built using HTML and CSS. It features a clean, responsive design to highlight my skills and projects.</p>
+                <div class="project-links">
+                <a href="https://mplustre.github.io/uplift-project-1/" target="_blank">
+                    <button>demo</button>
+                </a>
+                <a href="https://github.com/mplustre/uplift-project-1/" target="_blank">
+                    <button>code</button>
+                </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="image-container">
+                    <img src="assets/2.png" alt="film finder cover image" class="cover-img"/>
+                    <img src="assets/2s.png" alt="film finder screenshot" class="project-img"/>
+                </div>
+                
+                <h3>FILM FINDER</h3>
+                <p>An interactive film discovery app that allows users to search for movies based on various criteria such as title, genre, directors, and cast. Developed using vanilla JavaScript, it provides users with dynamic search results and movie details.</p>
+                <div class="project-links">
+                    <a href="https://mplustre.github.io/uplift-project-2/" target="_blank">
+                        <button>demo</button>
+                    </a>
+                    <a href="https://github.com/mplustre/uplift-project-2/" target="_blank">
+                        <button>code</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="image-container">
+                    <img src="assets/3.png" alt="manila moments cover image" class="cover-img"/>
+                    <img src="assets/3s.png" alt="manila moments screenshot" class="project-img"/>
+                </div>
+                
+                <h3>MANILA MOMENTS</h3>
+                <p>A React-based web application that helps users find curated activities around Metro Manila. It features location-based filtering and recommendations for both solo adventures and group outings.</p>
+                <div class="project-links">
+                    <a href="https://manila-moments.netlify.app/" target="_blank">
+                        <button>demo</button>
+                    </a>
+                    <a href="https://github.com/mplustre/uplift-project-3/" target="_blank">
+                        <button>code</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="image-container">
+                    <img src="assets/4.png" alt="pasta picker cover image" class="cover-img"/>
+                    <img src="assets/4s.png" alt="pasta picker screenshot" class="project-img"/>
+                </div>
+                
+                <h3>PASTA PICKER</h3>
+                <p>A full-stack web application for customizing and ordering pasta dishes. Built using the MERN stack (MongoDB, Express, React, Node.js), it includes user authentication, a dynamic menu, and a shopping cart for seamless online ordering.</p>
+                <div class="project-links">
+                    <a href="https://pastapicker.netlify.app/" target="_blank">
+                        <button>demo</button>
+                    </a>
+                    <a href="https://github.com/floofycato/pasta-picker/" target="_blank">
+                        <button>code</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <a href="#contact">
+          <button class="next-button">↓</button>
+        </a>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">let's get in touch!</h2>
+            <div id="contact-container">
+                <a href="mailto:mikaella.patria@gmail.com" target="_blank">
+                    <button id="email-me">💌 drop a line</button>
+                </a>
+                <div id="social-links">
+                    <a href="https://gitlab.com/mplustre" target="_blank">
+                        <img src="assets/gitlab.png" alt="Gitlab logo" class="contact-logos"/>
+                    </a>
+                    <a href="https://github.com/mplustre" target="_blank">
+                        <img src="assets/github.png" alt="Github logo" class="contact-logos" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/mikaella-lustre-a0245b201" target="_blank">
+                        <img src="assets/linkedin.png" alt="LinkedIn logo" 
+                        class="contact-logos" />
+                    </a>
+                </div>
+            </div>
+            <a href="#header">
+                <button class="next-button">↑</button>
+              </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tammy Lustre. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
